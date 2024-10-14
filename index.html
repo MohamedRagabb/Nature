@@ -14,13 +14,14 @@
             <nav>
                 <img src="./img/logo.png" alt="">
                 <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
                     <li><a href="#">contact</a></li>
                     <li><button class="btn btn-secondary">3333333</button></li>
                    
                 </ul>
+                <img src="./img/menu.svg" alt="" class="menu-btn">
             </nav>
             <div class="main-content">
                 <h1 class="intro-heading">we all love</h1>
@@ -33,7 +34,7 @@
 
     <section id="Services">
         <div class="container">
-            <div class="section-titles">
+            <div class="section-title">
                 <h1>Our Services</h1>
                 <div class="line"></div>
             </div>
@@ -65,7 +66,7 @@
 
             <div class="profile">
                 <img src="./img/profile.png" alt="">
-                <h4>Mohamed Eid</h4>
+                <h4> martine jousefe</h4>
             </div>
         </div>
     </section>
@@ -88,7 +89,8 @@
     <section id="questions">
         <div class="container">
             <h1>QUESTIONS?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum voluptatem voluptatibus totam, praesentium sed?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum voluptatem <br>
+                 voluptatibus totam, praesentium sed?</p>
             <button class="btn btn-primary">Lets Talk</button>
         </div>
     </section>
@@ -105,5 +107,19 @@
             <p>Love nature by tyler more</p>
         </div>
     </footer>
+
+
+
+
+
+
+
+    <script>
+        const navBtn= document.querySelector('.menu-btn')
+        const navList= document.querySelector('.nav-list')
+        navBtn.addEventListener("click" , function () {
+            navList.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
